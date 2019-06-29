@@ -43,3 +43,128 @@ org.eclipse.core.runtime.CoreException: 'aapt' error. Pre Compiler Build aborted
 !MESSAGE 'aapt' error. Pre Compiler Build aborted.
 !SUBENTRY 1 com.android.ide.eclipse.adt 8 0 2019-06-26 19:57:33.120
 !MESSAGE 'aapt' error. Pre Compiler Build aborted.
+!SESSION 2019-06-29 15:40:00.801 -----------------------------------------------
+eclipse.buildId=I20090611-1540
+java.version=1.6.0_45
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_IL
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2019-06-29 15:40:10.827
+!MESSAGE loadAndParseRClass: failed to find manifest package for project Todo_List
+
+!ENTRY com.android.ide.eclipse.adt 4 0 2019-06-29 15:40:10.830
+!MESSAGE loadAndParseRClass: failed to find manifest package for project hello
+
+!ENTRY org.eclipse.core.resources 4 2 2019-06-29 15:40:16.538
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Todo_List/AndroidManifest.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:664)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:288)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parse(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parseForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.parseManifestForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2019-06-29 15:40:16.539
+!MESSAGE Resource is out of sync with the file system: '/Todo_List/AndroidManifest.xml'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2019-06-29 15:40:16.539
+!MESSAGE Resource is out of sync with the file system: '/Todo_List/AndroidManifest.xml'.
+
+!ENTRY org.eclipse.core.resources 4 2 2019-06-29 15:40:17.374
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.core.resources".
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/hello/AndroidManifest.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:664)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:288)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parse(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parseForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.parseManifestForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2019-06-29 15:40:17.375
+!MESSAGE Resource is out of sync with the file system: '/hello/AndroidManifest.xml'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2019-06-29 15:40:17.375
+!MESSAGE Resource is out of sync with the file system: '/hello/AndroidManifest.xml'.
+
+!ENTRY org.eclipse.core.resources 4 75 2019-06-29 15:40:17.489
+!MESSAGE Errors occurred during the build.
+!SUBENTRY 1 com.android.ide.eclipse.adt 2 75 2019-06-29 15:40:17.489
+!MESSAGE Errors running builder 'Android Pre Compiler' on project 'Todo_List'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/Todo_List/AndroidManifest.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:664)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:288)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parse(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parseForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.parseManifestForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2019-06-29 15:40:17.489
+!MESSAGE Resource is out of sync with the file system: '/Todo_List/AndroidManifest.xml'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2019-06-29 15:40:17.489
+!MESSAGE Resource is out of sync with the file system: '/Todo_List/AndroidManifest.xml'.
+!SUBENTRY 1 com.android.ide.eclipse.adt 2 75 2019-06-29 15:40:17.489
+!MESSAGE Errors running builder 'Android Pre Compiler' on project 'hello'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource is out of sync with the file system: '/hello/AndroidManifest.xml'.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:664)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:288)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:277)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parse(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.AndroidManifestParser.parseForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.project.BaseProjectHelper.parseManifestForError(Unknown Source)
+	at com.android.ide.eclipse.adt.internal.build.PreCompilerBuilder.build(Unknown Source)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:627)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:170)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:253)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:256)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:309)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:341)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:140)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:238)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+!SUBENTRY 2 org.eclipse.core.resources 4 274 2019-06-29 15:40:17.490
+!MESSAGE Resource is out of sync with the file system: '/hello/AndroidManifest.xml'.
+!SUBENTRY 1 org.eclipse.core.resources 4 274 2019-06-29 15:40:17.490
+!MESSAGE Resource is out of sync with the file system: '/hello/AndroidManifest.xml'.
